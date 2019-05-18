@@ -1,4 +1,4 @@
-import { sampleSize, map } from "lodash/fp";
+import { sampleSize } from "lodash/fp";
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";

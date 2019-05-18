@@ -6,6 +6,7 @@
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "country-code-lookup": "0.0.13",
+    "gh-pages": "^2.0.1",
     "lodash": "^4.17.11",
     "mapbox-gl": "^0.54.0",
     "react": "^16.8.6",
@@ -14,6 +15,8 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "prettier": "prettier --single-quote --write './src/**/*.jsx' './src/**/*.js' './src/**/*.scss' './test/**/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -37,5 +40,6 @@
   },
   "devDependencies": {
     "prettier": "^1.17.1"
-  }
+  },
+  "homepage": "https://bvvriaktr.github.io/11questions"
 }
