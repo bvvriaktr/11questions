@@ -5,7 +5,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
-const random10 = sampleSize(10);
+const random8 = sampleSize(8);
 const itemWidth = 400;
 
 const styles = theme => ({
@@ -27,12 +27,17 @@ const styles = theme => ({
   }
 });
 
+const staticQuestions = [
+  {Question: 'Where do you live?'}, 
+  {Question: 'Why did you join Riaktr?'}
+]
+
 const QuoteList = props => {
   const { classes, quoteList = [] } = props;
-  const tenQuotes = random10(quoteList);
+  const filteredQuotes = [...staticQuestions, ...random8(quoteList)];
   return (
     <List className={classes.root}>
-      {tenQuotes.map((quote, index) => (
+      {filteredQuotes.map((quote, index) => (
         <ListItem className={classes.personItem} key={index}>
           <ListItemText>{quote.Question}</ListItemText>
         </ListItem>
