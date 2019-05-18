@@ -6,7 +6,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
 const random10 = sampleSize(10);
-const itemWidth = 350;
+const itemWidth = 400;
 
 const styles = theme => ({
   countryItem: {
